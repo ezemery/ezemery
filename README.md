@@ -1,5 +1,10 @@
 ### Hi there 👋
 
+My name is Eze 😄 and I love working with React, NextJS, NodeJS.
+
+- 👯 I’m looking to collaborate on React, NextJS, NodeJS projects
+- 📫 How to reach me: emereuwaonueze@gmail.com
+
 <!--
 **ezemery/ezemery** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
