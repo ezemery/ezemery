@@ -1,8 +1,8 @@
 ### Hi there 👋
 
-My name is Eze 😄 and I love working with React, NextJS, NodeJS, Java.
+My name is Eze 😄 and I love working with React, NextJS, NodeJS, Java and Go
 
-- 👯 I’m looking to collaborate on React, NextJS, NodeJS/Java projects
+- 👯 I’m looking to collaborate on React, NextJS, NodeJS/Java/Go projects
 - 📫 How to reach me: emereuwaonueze@gmail.com
 
 <!--
