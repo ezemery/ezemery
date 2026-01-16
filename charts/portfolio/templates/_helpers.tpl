@@ -1,16 +1,16 @@
 {{- define "portfolio.name" -}}
-{{- default .Chart.Name .Values.nameOverride | trunc 63 | trimSuffix "-" }}
+{{- default .Chart.Name .Values.nameOverride | lower | trunc 63 | trimSuffix "-" }}
 {{- end }}
 
 {{- define "portfolio.fullname" -}}
 {{- if .Values.fullnameOverride }}
-{{- .Values.fullnameOverride | trunc 63 | trimSuffix "-" }}
+{{- .Values.fullnameOverride | lower | trunc 63 | trimSuffix "-" }}
 {{- else }}
 {{- $name := default .Chart.Name .Values.nameOverride }}
-{{- if contains $name .Release.Name }}
-{{- .Release.Name | trunc 63 | trimSuffix "-" }}
+{{- if contains ($name | lower) (.Release.Name | lower) }}
+{{- .Release.Name | lower | trunc 63 | trimSuffix "-" }}
 {{- else }}
-{{- printf "%s-%s" .Release.Name $name | trunc 63 | trimSuffix "-" }}
+{{- printf "%s-%s" (.Release.Name | lower) ($name | lower) | trunc 63 | trimSuffix "-" }}
 {{- end }}
 {{- end }}
 {{- end }}
