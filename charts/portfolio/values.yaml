@@ -1,24 +1,24 @@
-replicaCount: 1
+replicaCount: 2
 
 image:
-  repository: ghcr.io/eze-emereuwaonu/ezemery
+  repository: ghcr.io/ezemery/ezemery
   pullPolicy: IfNotPresent
-  tag: "latest"
+  tag: "main"
 
 service:
-  type: ClusterIP
+  type: NodePort
   port: 80
   targetPort: 3000
 
 ingress:
-  enabled: false
-  className: ""
+  enabled: true
+  className: "nginx"
   annotations: {}
   hosts:
-    - host: portfolio.local
+    - host: ezemery.com
       paths:
         - path: /
-          pathType: ImplementationSpecific
+          pathType: Prefix
   tls: []
 
 resources:
